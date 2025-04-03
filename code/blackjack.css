@@ -14,10 +14,18 @@ h2, p, button {
     margin: 0;
 }
 
+#results {
+    font-weight: bold;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.game
+
 /* Annoying Dealer */
 
 .harley {
-    height: 250px;
+    height: 300px;
 }
 
 /* Card Styling */

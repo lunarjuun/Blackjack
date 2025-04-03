@@ -89,7 +89,35 @@ function hit() {
 }
 
 function stay() {
-    
+    dealerSum = reduceAce(dealerSum, dealerAceCount);
+    yourSum = reduceAce(yourSum, yourAceCount);
+
+    canHit = false;
+    document.getElementById("hidden").src = "/cards/" + hidden + ".png";
+
+    let message = "";
+    if (yourSum > 21) {
+        message = "You Lost.";
+    }
+    else if (dealerSum > 21) {
+        message = "You Won.";
+    }
+    //du og dealer <= 21 vvvv
+    else if (yourSum == dealerSum) {
+        message = "You Tied.";
+    }
+
+    else if (yourSum > dealerSum) {
+        message = "You Won.";
+    }
+
+    else if (yourSum < dealerSum) {
+        message = "You Lost.";
+    }
+
+    document.getElementById("dealer-sum").innerText = dealerSum;
+    document.getElementById("your-sum").innerText = yourSum;
+    document.getElementById("results").innerText = message;
 }
 
 function getValue(card) {
