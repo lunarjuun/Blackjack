@@ -47,7 +47,7 @@ function startGame() {
 }
 
 function getValue(card) {
-    let data = card.split(); // 4(value) C(type). så "split" på "-" betyr at koden deler opp i to så vi får en array som ["4", "C"]
+    let data = card.split("-"); // 4(value) C(type). så "split" på "-" betyr at koden deler opp i to så vi får en array som ["4", "C"]
     let value = data[0];
 
     if (isNaN(value)) { // J Q K har samme Value -- sjekker om Value har nummer, hvis ikke er det A (ess)
