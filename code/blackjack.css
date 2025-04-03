@@ -2,30 +2,29 @@ body, html {
     height: 100%;
     font-family: 'Chiller';
     text-align: center;
+    margin: 0;
+    overflow: hidden;
 }
 
 h2 {
     font-size: 30px;
 }
 
+h2, p, button {
+    margin: 0;
+}
+
 /* Annoying Dealer */
 
 .harley {
-    height: 200px;
-    width: 200px;
+    height: 250px;
 }
 
 /* Card Styling */
 
-#dealer-cards img {
-    height: 175px;
-    width: 125px;
-    margin: 2px;
-}
-
-#your-cards img {
-    height: 175px;
-    width: 125px;
+#dealer-cards img, #your-cards img {
+    height: 125px;
+    width: 85px;
     margin: 2px;
 }
 
@@ -46,8 +45,7 @@ h2 {
 
 .bg {
     background-image: url("/media/background-image.jpg");
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: cover;
 }
