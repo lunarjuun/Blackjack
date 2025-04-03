@@ -10,14 +10,15 @@
 
 <body class="bg">
 
+        <img src="/media/dealer/annoying-dealer.png" class="harley">
+
     <div class="game-window">
-        <img src="/media/annoying-dealer.png" class="harley">
-        <h2>Dealer: <span id="dealer-sum"></span></h2>
-        <div id="dealer-cards">
+        <h2 class="players">Dealer: <span id="dealer-sum"></span></h2>
+        <div id="dealer-cards" class="dealercards">
             <img id="hidden" src="/cards/BACK.png">
         </div>
 
-        <h2> You: <span id="your-sum"></span></h2>
+        <h2 class="players"> You: <span id="your-sum"></span></h2>
         <div id="your-cards"></div>
 
         <br>
@@ -25,8 +26,8 @@
         <button id="stay">Stay</button>
         <p id="results"></p>
     </div>
+        <button id="playAgain" class="playagain">Play Again?</button>
     
-
 </body>
 
     <script src="blackjack.js"></script>

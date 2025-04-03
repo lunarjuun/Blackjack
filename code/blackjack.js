@@ -96,28 +96,45 @@ function stay() {
     document.getElementById("hidden").src = "/cards/" + hidden + ".png";
 
     let message = "";
+    let dealerImage = "annoying-dealer.png";
+
     if (yourSum > 21) {
         message = "You Lost.";
+        dealerImage = "dealer-win.png";
     }
     else if (dealerSum > 21) {
         message = "You Won.";
+        dealerImage = "dealer-lose.png";
     }
     //du og dealer <= 21 vvvv
     else if (yourSum == dealerSum) {
         message = "You Tied.";
+        dealerImage = "dealer-tie.png"
     }
 
     else if (yourSum > dealerSum) {
         message = "You Won.";
+        dealerImage = "dealer-lose.png";    
     }
 
     else if (yourSum < dealerSum) {
         message = "You Lost.";
+        dealerImage = "dealer-win.png";
     }
+
+
+    document.querySelector(".harley").src = "/media/dealer/" + dealerImage;
 
     document.getElementById("dealer-sum").innerText = dealerSum;
     document.getElementById("your-sum").innerText = yourSum;
     document.getElementById("results").innerText = message;
+
+    document.getElementById("playAgain").style.display = "block";
+
+    document.getElementById("playAgain").addEventListener("click", function() {
+        location.reload();
+    });
+
 }
 
 function getValue(card) {
