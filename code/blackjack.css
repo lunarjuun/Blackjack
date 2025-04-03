@@ -1,0 +1,48 @@
+body, html {
+    height: 100%;
+    font-family: 'Chiller';
+    text-align: center;
+}
+
+/* Annoying Dealer */
+
+.harley {
+    height: 200px;
+    width: 200px;
+}
+
+/* Card Styling */
+
+#dealer-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 2px;
+}
+
+#your-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 2px;
+}
+
+/* Button Styling */
+
+#hit, #stay {
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+
+    color: black;
+    font-family: 'Chiller';
+}
+
+/* Background Image */
+
+.bg {
+    background-image: url("/media/background-image.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+}
